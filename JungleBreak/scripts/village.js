@@ -9,8 +9,14 @@ var Village = {
 				this.add('2d, aiBounce');
 
                 this.on("bump.left, bump.right, bump.bottom, bump.top", function (collision) {
-                	if (collision.obj.isA("Player")) {
+                	if (collision.obj.isA("Player") && !Village.takledToOldGuy) {
                     	Game.callout('Greetings, stranger!<br /><br />This village is full of creepy people and this iseland is about to sink under the water... <br /><br />You should not have come here.', { x: 300, y: 225 });
+
+                    	setTimeout(function() {
+                    		$('#callout').hide();
+
+                    	}, 4000);
+
                     	Village.takledToOldGuy = true;
                     }
                 });

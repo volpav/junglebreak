@@ -80,8 +80,8 @@
                 this.on("bump.left,bump.right,bump.bottom,bump.top", function (collision) {
                     if (collision.obj.isA("Player")) {
 
-                        Village.load(Q, function () {
-                            Q.stageScene('village');
+                        Jungle.load(Q, function () {
+                            Q.stageScene('jungle');
                         });
                         //Q.stageScene("endGame", 1, { label: "You Won!" });
                         //this.destroy();
@@ -122,6 +122,9 @@
                 this.on("bump.left,bump.right,bump.bottom,bump.top", function (collision) {
                     if (collision.obj.isA("Player")) {
                         Game.callout("You've met a shaman. He takes your karma but shows you the way out. Just try to reach the door.", { x: 250, y: 125 });
+                        setTimeout(function(){
+                                $('#callout').hide();
+                        }, 4000);
                         Game.karmaChange(-50);
                         _stage.insert(new Q.Exit({ x: 600, y: 150 }));
                         _stage.insert(new Q.Springboard({ x: 50, y: 350 }));
