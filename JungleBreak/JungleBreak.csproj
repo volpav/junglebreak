@@ -62,6 +62,7 @@
     <Content Include="game.html" />
     <Content Include="images\bw5.gif" />
     <Content Include="images\frog_idle.gif" />
+    <Content Include="images\jungle_tile_set.png" />
     <Content Include="images\male_traveler_idle.gif" />
     <Content Include="images\Nn_still.gif" />
     <Content Include="images\player.png" />
@@ -72,6 +73,7 @@
     <Content Include="images\Village_Objects_zpsc9a58715.png" />
     <Content Include="images\Village_Terrain.png" />
     <Content Include="images\Village_well.png" />
+    <Content Include="images\waspidle.gif" />
     <Content Include="scripts\cave.js" />
     <Content Include="scripts\jquery-2.0.3.min.map" />
     <Content Include="data\cave.tmx" />
@@ -79,6 +81,7 @@
     <Content Include="data\jungle.tmx" />
     <Content Include="data\jungle2.tmx" />
     <Content Include="data\village.tmx" />
+    <Content Include="data\jungle3.tmx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,6 +95,7 @@
     <Content Include="scripts\jquery-2.0.3.min.js" />
     <Content Include="scripts\quintus-all.js" />
     <Content Include="scripts\village.js" />
+    <Content Include="temp.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

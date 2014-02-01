@@ -14,3 +14,9 @@ C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normnfkd.nlp
 C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.csprojResolveAssemblyReference.cache
 C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.dll
 C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.pdb
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\bin\JungleBreak.dll.config
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\bin\JungleBreak.dll
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\bin\JungleBreak.pdb
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.csprojResolveAssemblyReference.cache
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.dll
+C:\Users\lkorzeniowski\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.pdb
