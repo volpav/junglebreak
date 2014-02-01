@@ -17,7 +17,7 @@
             stage.insert(new Q.Frog({ x: 300, y: 350 }));
             stage.insert(new Q.Frog({ x: 400, y: 350 }));
             stage.insert(new Q.Native({ x: 800, y: 350 }));
-            stage.insert(new Q.Door({ x: 470, y: 150 }));
+            stage.insert(new Q.Springboard({ x: 470, y: 150 }));
 
             stage.insert(new Q.Frog({ x: 930, y: 20 }));
             stage.insert(new Q.Frog({ x: 1020, y: 20 }));
@@ -43,7 +43,7 @@
         });
 
 
-        Q.Sprite.extend("Door", {
+        Q.Sprite.extend("Springboard", {
             init: function (p) {
                 this._super(p, { asset: "springboardUp.png", x: 210, y: 50, jumpSpeed: -380 });
                 this.add('2d, aiBounce');
@@ -72,7 +72,7 @@
             }
         });
 
-        Q.Sprite.extend("Tiger", {
+        Q.Sprite.extend("Exit", {
             init: function (p) {
                 this._super(p, { asset: "castledoors_0.png", x: 210, y: 50, jumpSpeed: -380 });
                 this.add('2d, aiBounce');
@@ -122,8 +122,8 @@
                     if (collision.obj.isA("Player")) {
                         Game.message("You've met a shaman. He takes your karma but shows you the way out. Just try to reach the door.");
                         Game.karmaChange(-50);
-                        _stage.insert(new Q.Tiger({ x: 600, y: 150 }));
-                        _stage.insert(new Q.Door({ x: 50, y: 350 }));
+                        _stage.insert(new Q.Exit({ x: 600, y: 150 }));
+                        _stage.insert(new Q.Springboard({ x: 50, y: 350 }));
 
                         _stage.insert(new Q.Enemy({ x: 100, y: 350 }));
                         _stage.insert(new Q.Enemy({ x: 200, y: 350 }));
