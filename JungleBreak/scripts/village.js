@@ -1,8 +1,8 @@
 var Village = {
 	load: function(Q, complete) {
 		Q.scene('village', function (stage) {
-			var background = new Q.TileLayer({ 
-				dataAsset: "village.tmx", 
+        	var background = new Q.TileLayer({ 
+				dataAsset: 'village.tmx', 
 				layerIndex: 1, 
 				sheet: 'village.tiles', 
 				tileW: 32, 
@@ -12,11 +12,12 @@ var Village = {
 
             stage.insert(background);
 
+
             //var collision = new Q.TileLayer({ dataAsset: "cave.tmx", layerIndex: 1, sheet: 'tiles', tileW: 24, tileH: 24 });
             //stage.collisionLayer(collision);
         });
 
-        Q.load('village.house.png, village.terrain.png', function () {
+		Q.load('village.house.png, village.terrain.png, village.tmx', function () {
             Q.sheet('village.tiles', 'village.terrain.png', { tilew: 32, tileh: 32 });
 
             complete();
