@@ -1,0 +1,5 @@
+C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\bin\JungleBreak.dll
+C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\bin\JungleBreak.pdb
+C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.csprojResolveAssemblyReference.cache
+C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.dll
+C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.pdb
