@@ -144,7 +144,9 @@
         // load assets
         Q.load("bw5.gif, male_traveler_idle.gif, cave2.tmx, frog_idle.gif, Nn_still.gif, spider01.png, castledoors_0.png, springboardUp.png", function () {
             Q.sheet("tiles", "bw5.gif", { tilew: 32, tileh: 32 });
-            Q.stageScene("cave2");
+
+
+            complete();
         });
     }
 };
