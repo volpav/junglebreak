@@ -117,6 +117,7 @@
             init: function (p) {
                 this._super(p, { asset: "Nn_still.gif", x: 50, y: 50, jumpSpeed: -380 });
                 this.add('2d, aiBounce');
+                this.p.flip = 'x';
 
                 this.on("bump.left,bump.right,bump.bottom,bump.top", function (collision) {
                     if (collision.obj.isA("Player")) {
