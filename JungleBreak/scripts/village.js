@@ -4,7 +4,7 @@ var Village = {
         	var background = new Q.TileLayer({ 
 				dataAsset: 'village.tmx', 
 				layerIndex: 1, 
-				sheet: 'village.tiles', 
+				sheet: 'village.tiles.background', 
 				tileW: 32, 
 				tileH: 32, 
 				type: Q.SPRITE_NONE 
@@ -12,13 +12,20 @@ var Village = {
 
             stage.insert(background);
 
+			var collision = new Q.TileLayer({ 
+				dataAsset: 'village.tmx', 
+				layerIndex: 0, 
+				sheet: 'village.tiles.terrain', 
+				tileW: 32, 
+				tileH: 32 
+			});
 
-            //var collision = new Q.TileLayer({ dataAsset: "cave.tmx", layerIndex: 1, sheet: 'tiles', tileW: 24, tileH: 24 });
-            //stage.collisionLayer(collision);
-        });
+			stage.collisionLayer(collision);
+	    });
 
-		Q.load('village.house.png, village.terrain.png, village.tmx', function () {
-            Q.sheet('village.tiles', 'village.terrain.png', { tilew: 32, tileh: 32 });
+		Q.load(['village.terrain.png', 'village.tmx'], function () {
+            Q.sheet('village.tiles.terrain', 'village.terrain.png', { tilew: 32, tileh: 32 });
+            Q.sheet('village.tiles.background', 'village.terrain.png', { tilew: 32, tileh: 32 });
 
             complete();
         });
