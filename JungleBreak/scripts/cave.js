@@ -45,7 +45,7 @@
 
         Q.Sprite.extend("Door", {
             init: function (p) {
-                this._super(p, { asset: "frog_idle.gif", x: 210, y: 50, jumpSpeed: -380 });
+                this._super(p, { asset: "springboardUp.png", x: 210, y: 50, jumpSpeed: -380 });
                 this.add('2d, aiBounce');
 
                 this.on("bump.left,bump.right,bump.bottom,bump.top", function (collision) {
@@ -92,7 +92,7 @@
 
         Q.Sprite.extend("Enemy", {
             init: function (p) {
-                this._super(p, { asset: "tiger.png", x: 210, y: 50, jumpSpeed: -380, vx: 100 });
+                this._super(p, { asset: "spider01.png", x: 210, y: 50, jumpSpeed: -380, vx: 100 });
                 this.add('2d, aiBounce');
 
                 this.on("bump.left,bump.right,bump.bottom", function (collision) {
@@ -141,7 +141,7 @@
         });
 
         // load assets
-        Q.load("bw5.gif, male_traveler_idle.gif, cave2.tmx, frog_idle.gif, Nn_still.gif, tiger.png, castledoors_0.png", function () {
+        Q.load("bw5.gif, male_traveler_idle.gif, cave2.tmx, frog_idle.gif, Nn_still.gif, spider01.png, castledoors_0.png, springboardUp.png", function () {
             Q.sheet("tiles", "bw5.gif", { tilew: 32, tileh: 32 });
             Q.stageScene("cave2");
         });
