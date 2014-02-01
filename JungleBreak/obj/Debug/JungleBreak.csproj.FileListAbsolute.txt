@@ -3,3 +3,14 @@ C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\bin\JungleBreak.
 C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.csprojResolveAssemblyReference.cache
 C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.dll
 C:\Users\lkorzeniowski\Documents\GitHub\junglebreak\JungleBreak\obj\Debug\JungleBreak.pdb
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\JungleBreak.dll
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\JungleBreak.pdb
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\mscorlib.dll
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normidna.nlp
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normnfc.nlp
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normnfd.nlp
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normnfkc.nlp
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\bin\normnfkd.nlp
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.csprojResolveAssemblyReference.cache
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.dll
+C:\Users\manowak\Documents\GitHub\jb\junglebreak\JungleBreak\obj\Debug\JungleBreak.pdb
