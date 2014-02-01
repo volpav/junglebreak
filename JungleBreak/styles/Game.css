@@ -1,0 +1,26 @@
+#callout {
+	position: absolute;
+    display: none;
+}
+
+#callout .text {
+    color: #fff;
+    position: relative;
+    padding: 20px;
+    background-color: #171717;
+    border-radius: 3px;
+    width: 200px;
+    display: block;
+}
+
+#callout .text:after {
+    position: absolute;
+    bottom: -15px;
+    right: 25px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #171717 rgba(0, 0, 0, 0);
+    display: block;
+    width: 0;
+    content: '';
+}

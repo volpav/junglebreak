@@ -1,5 +1,19 @@
 var Village = {
 	load: function(Q, complete) {
+		Q.Sprite.extend('Sitizen', {
+		    init: function (p) {
+		        this._super(p, { asset: 'oldmanidle.gif', x: 500, y: 300, jumpSpeed: -380 });
+		        this.p.flip = 'x';
+				this.add('2d, aiBounce');
+
+                this.on("bump.left, bump.right, bump.bottom, bump.top", function (collision) {
+                	if (collision.obj.isA("Player")) {
+                    	Game.callout('Greetings, stranger!<br /><br />This village is full of creepy people and this iseland is about to sink under the water... <br /><br />You should not have come here.', { x: 300, y: 225 });
+                    }
+                });
+		    }
+		});
+
 		Q.Sprite.extend('Player', {
 		    init: function (p) {
 		        this._super(p, { asset: 'male_traveler_idle.gif', x: 500, y: 300, jumpSpeed: -380 });
@@ -65,10 +79,12 @@ var Village = {
 				y: false
 			});
 
+			stage.insert(new Q.Sitizen({ x: 700, y: 450 }));
+
 			stage.collisionLayer(collision);
 	    });
 
-		Q.load(['village.terrain.png', 'village.house.png', 'village.tmx', 'male_traveler_idle.gif'], function () {
+		Q.load(['village.terrain.png', 'village.house.png', 'village.tmx', 'male_traveler_idle.gif', 'oldmanidle.gif'], function () {
             Q.sheet('village.tiles.background', 'village.house.png', { tilew: 32, tileh: 32 });
             Q.sheet('village.tiles.terrain', 'village.terrain.png', { tilew: 32, tileh: 32 });
             Q.sheet('village.tiles.houses', 'village.house.png', { tilew: 32, tileh: 32 });

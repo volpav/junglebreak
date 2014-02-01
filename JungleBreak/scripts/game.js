@@ -23,4 +23,15 @@
     message: function (text) {
         jQuery(".message").html(text);
     },
+
+    callout: function (text, position) {
+        var q = $('#quintus_container').offset();
+
+        $('#callout .text').html(text);
+
+        $('#callout').css({ 
+            left: q.left + position.x + 'px',
+            top: q.top + position.y + 'px'
+        }).show();
+    }
 };
