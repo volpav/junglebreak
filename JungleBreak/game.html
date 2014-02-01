@@ -17,24 +17,24 @@
                          .touch();
 
         // load assets
-        Q.load("tiles_map.png, player.png, fly.png, level1.tmx", function () {
-            Q.sheet("tiles", "tiles_map.png", { tilew: 70, tileh: 70 });
-            Q.stageScene("level1");
+        Q.load("bw5.gif, cave.tmx", function () {
+            Q.sheet("tiles", "bw5.gif", { tilew: 24, tileh: 24 });
+            Q.stageScene("cave");
         });
 
         // set stage
-        Q.scene("level1", function (stage) {
-            var background = new Q.TileLayer({ dataAsset: "level1.tmx", layerIndex: 0, sheet: "tiles", tileW: 70, tileH: 70, type: Q.SPRITE_NONE });
+        Q.scene("cave", function (stage) {
+            var background = new Q.TileLayer({ dataAsset: "cave.tmx", layerIndex: 0, sheet: "tiles", tileW: 24, tileH: 24, type: Q.SPRITE_NONE });
             stage.insert(background);
 
-            var collision = new Q.TileLayer({ dataAsset: "level1.tmx", layerIndex: 1, sheet: 'tiles', tileW: 70, tileH: 70 });
-            stage.collisionLayer(collision);
+            //var collision = new Q.TileLayer({ dataAsset: "cave.tmx", layerIndex: 1, sheet: 'tiles', tileW: 24, tileH: 24 });
+            //stage.collisionLayer(collision);
 
-            var player = stage.insert(new Q.Player());
-            stage.add("viewport").follow(player, { x: true, y: true }, { minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h });
+            //var player = stage.insert(new Q.Player());
+            //stage.add("viewport").follow(player, { x: true, y: true }, { minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h });
 
-            var verticalEnemy = new Q.VerticalEnemy({ x: 800, y: 120, rangeY: 70, asset: 'fly.png' });
-            stage.insert(verticalEnemy);
+            //var verticalEnemy = new Q.VerticalEnemy({ x: 800, y: 120, rangeY: 24, asset: 'fly.png' });
+            //stage.insert(verticalEnemy);
         });
 
         Q.scene("endGame", function (stage) {

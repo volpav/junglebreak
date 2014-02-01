@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Cave" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/OPP Assets/Tiles/Cave/bw5.gif" width="512" height="512"/>
+ </tileset>
+ <layer name="background" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxrZmBgaB7Fo3gI4T+DwA2DCY+GxygeKAwARSTNow==
+  </data>
+ </layer>
+ <layer name="collision" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJytU0EOwDAI8rk+wefvagwgXTRpYjqhoLMiog4PCvSN1bIaxl+idup68eBoVp6RvlnPdCkPL1qcmTBdbk+2UHg1U+ZFvb/hrg+LFPeu34nLlve7P7NJkHc+1281LNKp+BDX5HP1MV2dT/Vv25OZb/pYbDuM+sf+pW3WDH+9Ax8dzmAh
+  </data>
+ </layer>
+</map>
