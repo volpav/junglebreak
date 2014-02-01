@@ -72,6 +72,7 @@
     <Content Include="images\Village_Objects_zpsc9a58715.png" />
     <Content Include="images\Village_Terrain.png" />
     <Content Include="images\Village_well.png" />
+    <Content Include="scripts\cave.js" />
     <Content Include="scripts\jquery-2.0.3.min.map" />
     <Content Include="data\cave.tmx" />
     <Content Include="data\cave2.tmx" />
@@ -90,6 +91,7 @@
     <Content Include="scripts\jquery-2.0.3.js" />
     <Content Include="scripts\jquery-2.0.3.min.js" />
     <Content Include="scripts\quintus-all.js" />
+    <Content Include="scripts\village.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
